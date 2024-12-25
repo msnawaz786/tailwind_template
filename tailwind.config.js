@@ -5,16 +5,20 @@ module.exports = {
     extend: {
       fontFamily: {
         great: ["'Great Vibes'", 'serif'],
-        popins:["'Poppins'", 'serif'],
-      }, 
-      colors:{
-           "light":"#FFFFF",
-           "gold":"#c8a97e",
+        popins: ["'Poppins'", 'serif'],
       },
-      maxWidth:{
-        "container":"1100px"
+      colors: {
+        "light": "#FFFFF",
+        "gold": "#c8a97e",
+        "lightgray": "#fafafa",
       },
-      
+      maxWidth: {
+        "container": "1140px"
+      },
+      backgroundImage: {
+        "background-table": "url('/assets/bg_1.JPG')",
+      },
+
     },
   },
   plugins: [],
