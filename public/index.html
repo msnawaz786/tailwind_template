@@ -27,16 +27,14 @@
             background-position: center;
             background-size: cover;
             text-align: center;
-            /* font-size: 18px; */
+
             background: #fff;
-            /* display: flex; */
-            /* justify-content: center;
-            align-items: center; */
+
         }
 
         .swiper-slide img {
             display: block;
-            /* width: 100%; */
+
         }
     </style>
 </head>
@@ -44,26 +42,26 @@
 <body class="bg-white font-popins">
     <header class="w-full h-[950px] relative">
         <!-- swiper -->
-        <div class="swiper mySwiper !absolute top-0 left-0 w-full h-full">
+        <div class="swiper mySwiper !absolute top-0 left-0 w-full h-full group">
             <div class="swiper-wrapper">
                 <div class="overaly w-full h-full absolute top-0 left-0 bg-black bg-opacity-60 z-20"></div>
                 <div class="swiper-slide relative">
 
-                    <img src="/assets/slider 1.webp" class="absolute top-0 left-0 w-full h-full z-10" />
+                    <img src="/assets/slider 1.webp" class="absolute top-0 left-0 w-full h-full z-10 object-cover" />
                     <div class="relative z-30 flex flex-col w-full h-full justify-center items-center">
                         <h2 class=" font-bold font-great text-[80px] text-[#c8a97e]">Feliciano</h2>
                         <h1 class="text-white text-6xl font-popins font-[600] uppercase">Nutritious & Tasty</h1>
                     </div>
                 </div>
                 <div class="swiper-slide relative">
-                    <img src="/assets/slider 2.webp" class="absolute top-0 left-0 w-full h-full z-10" />
+                    <img src="/assets/slider 2.webp" class="absolute top-0 left-0 w-full h-full z-10 object-cover" />
                     <div class="relative z-20 flex flex-col w-full h-full justify-center items-center">
                         <h2 class=" font-bold font-great text-[80px] text-[#c8a97e] ">Feliciano</h2>
                         <h1 class="text-white text-6xl font-popins font-[600] uppercase">Nutritious & Tasty</h1>
                     </div>
                 </div>
                 <div class="swiper-slide relative">
-                    <img src="/assets/slider 1.webp" class="absolute top-0 left-0 w-full h-full z-10" />
+                    <img src="/assets/slider 1.webp" class="absolute top-0 left-0 w-full h-full z-10 object-cover" />
                     <div class="relative z-20 flex flex-col w-full h-full justify-center items-center">
                         <h2 class=" font-bold font-great text-[80px] text-[#c8a97e]">Feliciano</h2>
                         <h1 class="text-white text-6xl font-popins font-[600] uppercase">Delicious Specialties</h1>
@@ -71,8 +69,12 @@
                 </div>
 
             </div>
-            <div class="swiper-button-next "></div>
-            <div class="swiper-button-prev"></div>
+            <div
+                class="swiper-button-next text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 ">
+            </div>
+            <div
+                class="swiper-button-prev text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            </div>
             <div class="swiper-pagination"></div>
         </div>
         <!-- swiper end -->
@@ -113,52 +115,61 @@
     <!-- header end -->
 
     <!-- breakfast section -->
-    <div
-        class="w-full md:flex justify-evenly lg:mt-[-230px] lg:text-white relative z-20 border-t-[1px] border-t-[rgba(255,255,255,0.1)] ">
-        <div class="flex md:flex flex-col items-center  pt-5">
-            <div class="w-[90px] h-[90px] rounded-full">
-                <img src="/assets/breakfast-1.jpg.webp" class="w-full h-full object-cover rounded-full" />
+    <section class="breakfast-section">
+        <div
+            class="w-full md:flex justify-evenly lg:mt-[-230px] lg:text-white relative z-20 border-t-[1px] border-t-[rgba(255,255,255,0.1)] ">
+            <div class="flex md:flex flex-col items-center  pt-5">
+                <div class="w-[90px] h-[90px] rounded-full">
+                    <img src="/assets/breakfast-1.jpg.webp" class="w-full h-full object-cover rounded-full" />
+                </div>
+                <h3 class="text-lg font-[500] md:text-[#333333] lg:text-white text-center font-popins pt-5">Grilled Beef
+                    with potatoes</h3>
+                <p class="text-[14px] md:text-[#666666] lg:text-white text-center  font-popins font-medium">Meat ,
+                    Patato ,
+                    Tamato , Rice
+                </p>
             </div>
-            <h3 class="text-lg font-[500] md:text-[#333333] lg:text-white text-center font-popins pt-5">Grilled Beef
-                with potatoes</h3>
-            <p class="text-[14px] md:text-[#666666] lg:text-white text-center  font-popins font-medium">Meat , Patato ,
-                Tamato , Rice
-            </p>
-        </div>
-        <div class="flex md:flex flex-col items-center pt-5">
-            <div class="w-[90px] h-[90px] rounded-full">
-                <img src="/assets/breakfast-2.jpg.webp" class="w-full h-full object-cover rounded-full" />
+            <div class="flex md:flex flex-col items-center pt-5">
+                <div class="w-[90px] h-[90px] rounded-full">
+                    <img src="/assets/breakfast-2.jpg.webp" class="w-full h-full object-cover rounded-full" />
+                </div>
+                <h3 class="text-lg font-[500] md:text-[#333333] lg:text-white text-center  font-popins pt-5">Grilled
+                    Beef
+                    with potatoes
+                </h3>
+                <p class="text-[14px] md:text-[#666666] lg:text-white text-center font-popins font-medium">Meat , Patato
+                    ,
+                    Tamato , Rice
+                </p>
             </div>
-            <h3 class="text-lg font-[500] md:text-[#333333] lg:text-white text-center  font-popins pt-5">Grilled Beef
-                with potatoes
-            </h3>
-            <p class="text-[14px] md:text-[#666666] lg:text-white text-center font-popins font-medium">Meat , Patato ,
-                Tamato , Rice
-            </p>
-        </div>
-        <div class="flex md:flex flex-col items-center pt-5">
-            <div class="w-[90px] h-[90px] rounded-full">
-                <img src="/assets/breakfast-3.jpg.webp" class="w-full h-full object-cover rounded-full" />
+            <div class="flex md:flex flex-col items-center pt-5">
+                <div class="w-[90px] h-[90px] rounded-full">
+                    <img src="/assets/breakfast-3.jpg.webp" class="w-full h-full object-cover rounded-full" />
+                </div>
+                <h3 class="text-lg font-[500] md:text-[#333333]  lg:text-white text-center font-popins pt-5">Grilled
+                    Beef
+                    with potatoes
+                </h3>
+                <p class="text-[14px] md:text-[#666666]  lg:text-white text-center font-popins font-medium">Meat ,
+                    Patato ,
+                    Tamato , Rice
+                </p>
             </div>
-            <h3 class="text-lg font-[500] md:text-[#333333]  lg:text-white text-center font-popins pt-5">Grilled Beef
-                with potatoes
-            </h3>
-            <p class="text-[14px] md:text-[#666666]  lg:text-white text-center font-popins font-medium">Meat , Patato ,
-                Tamato , Rice
-            </p>
-        </div>
-        <div class="flex md:flex flex-col items-center pt-5">
-            <div class="w-[90px] h-[90px] rounded-full">
-                <img src="/assets/breakfast-1.jpg.webp" class="w-full h-full object-cover rounded-full" />
+            <div class="flex md:flex flex-col items-center pt-5">
+                <div class="w-[90px] h-[90px] rounded-full">
+                    <img src="/assets/breakfast-1.jpg.webp" class="w-full h-full object-cover rounded-full" />
+                </div>
+                <h3 class="text-lg font-[500] md:text-[#333333]  lg:text-white text-center font-popins pt-5">Grilled
+                    Beef
+                    with potatoes
+                </h3>
+                <p class="text-[14px] md:text-[#666666] lg:text-white text-center  font-popins font-medium">Meat ,
+                    Patato ,
+                    Tamato , Rice
+                </p>
             </div>
-            <h3 class="text-lg font-[500] md:text-[#333333]  lg:text-white text-center font-popins pt-5">Grilled Beef
-                with potatoes
-            </h3>
-            <p class="text-[14px] md:text-[#666666] lg:text-white text-center  font-popins font-medium">Meat , Patato ,
-                Tamato , Rice
-            </p>
         </div>
-    </div>
+    </section>
     <!-- about section -->
     <section class="about-section">
         <div class="w-full py-[119px] ">
@@ -172,9 +183,10 @@
                     </div>
                 </div>
                 <div class="px-10">
-                    <div class="border-red-200">
+                    <div class="border-red-200 text-center md:text-start">
                         <h2 class="text-gold font-great text-8xl font-normal relative top-[50px] z-10">About</h2>
-                        <h1 class="text-5xl font-semibold font-popins text-[#333333] relative z-20">Feliciano Restaurant
+                        <h1 class="text-5xl font-semibold font-popins text-[#333333] relative z-20">Feliciano<br>
+                            Restaurant
                         </h1>
                     </div>
                     <p class="text-[#666666] text-[17px] pt-4 leading-8">A small river named Duden flows by their place
@@ -182,7 +194,7 @@
                         is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
                     <p class="pt-7 text-[#666666] text-[17px] ">Mon - Fri<span class="font-bold"> 8 AM - 11 PM</span>
                     </p>
-                    <h1 class="text-[40px] text-gold font-bold pt-7">+ 1-978-123-4567</h1>
+                    <h1 class="text-[25px] sm:text-[40px] md:text-[40px] text-gold font-bold pt-7">+ 1-978-123-4567</h1>
                 </div>
 
             </div>
@@ -231,19 +243,22 @@
                     <div class="flex flex-col items-center  text-center pt-5">
                         <img src="/assets/birthday-cake.png" class="w-[54px] h-[54px]" />
                         <h1 class="text-2xl font-medium py-5">Birthday Party</h1>
-                        <p class="text-[#666666] font-normal text-[17px] leading-9">Even the all-powerful Pointing has
+                        <p class="text-[#666666] font-normal text-[17px] leading-9 px-4">Even the all-powerful Pointing
+                            has
                             no control about the blind texts it is an almost unorthographic.</p>
                     </div>
                     <div class="flex flex-col items-center  text-center pt-5">
                         <img src="/assets/meeting.png" class="w-[54px] h-[54px]" />
                         <h1 class="text-2xl font-medium py-5"> Business Meetings</h1>
-                        <p class="text-[#666666] font-normal text-[17px] leading-9">Even the all-powerful Pointing has
+                        <p class="text-[#666666] font-normal text-[17px] leading-9 px-4">Even the all-powerful Pointing
+                            has
                             no control about the blind texts it is an almost unorthographic.</p>
                     </div>
                     <div class="flex flex-col items-center  text-center pt-5">
                         <img src="/assets/tray.png" class="w-[54px] h-[54px]" />
                         <h1 class="text-2xl font-medium py-5">Wedding Party</h1>
-                        <p class="text-[#666666] font-normal text-[17px] leading-9">Even the all-powerful Pointing has
+                        <p class="text-[#666666] font-normal text-[17px] leading-9 px-4">Even the all-powerful Pointing
+                            has
                             no control about the blind texts it is an almost unorthographic.</p>
                     </div>
                 </div>
@@ -404,7 +419,7 @@
 
             <div class="text-center">
                 <h1 class="relative text-gold font-great font-normal text-8xl top-[50px] z-10">Chef</h1>
-                <h2 class="font-extrabold text-5xl relative z-20 text-[#333333]">Our Master Chef</h2>
+                <h2 class="font-extrabold text-4xl md:text-5xl relative z-20 text-[#333333]">Our Master Chef</h2>
             </div>
             <div class="max-w-container mx-auto pt-[90px]">
 
@@ -483,16 +498,18 @@
     <!-- table section -->
     <section class="table-section">
 
-        <div class="bg-[url('/assets/bg_1.JPG')] w-full h-[838px] bg-no-repeat bg-center bg-cover bg-fixed flex items-center ">
-            <div class="max-w-container mx-auto mt-0">
-                <div class="bg-white w-[670px]">
+        <div class="bg-[url('/assets/bg_1.JPG')] w-full h-[838px] bg-no-repeat bg-center bg-cover bg-fixed  ">
+            <div class="max-w-container mx-auto h-full flex items-center justify-center md:justify-start">
+                <div class="bg-white inline-block md:px-20 lg:px-20">
                     <div class="text-center">
-                        <h1 class="relative text-gold font-great font-normal text-8xl top-[45px] z-10">Book a table
+                        <h1 class="relative text-gold font-great font-normal text-7xl md:text-8xl top-[45px] z-10">Book
+                            a table
                         </h1>
-                        <h2 class="font-extrabold text-5xl relative z-20 text-[#333333]">Make Reservation</h2>
+                        <h2 class="font-extrabold text-4xl md:text-5xl relative z-20 text-[#333333]">Make Reservation
+                        </h2>
                     </div>
-                    <form class="flex flex-col gap-y-10 items-center pt-10 pb-12">
-                        <div class="flex flex-col sm:flex-col md:flex-row lg:flex-row px-12 gap-x-[30px]">
+                    <form class="flex flex-col gap-y-10  pt-10 pb-12 items-center">
+                        <div class="flex flex-col sm:flex-col md:flex-row lg:flex-row  gap-x-[30px]">
                             <div class="1 flex flex-col gap-y-5">
                                 <div class="flex flex-col">
                                     <label class="text-[17px] font-semibold pb-4">Name</label>
@@ -544,7 +561,7 @@
 
     <!-- testymony swiper section -->
     <section class="testymony-section">
-        <div class="w-full pb-[119px]">
+        <div class="w-full py-[119px]">
             <div class="max-w-container mx-auto">
                 <div class="text-center">
                     <h1 class="text-gold font-great relative text-8xl top-[50px] z-10">Testimony</h1>
