@@ -25,7 +25,7 @@ let swiper_1 = new Swiper(".mySwiper-1", {
     slidesPerView: 3,
     spaceBetween: 30,
     pagination: {
-        el: ".swiper_1-pagination",
+        el: ".swiper-1-pagination",
         clickable: true,
     },
 });

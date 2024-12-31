@@ -15,9 +15,7 @@ module.exports = {
       maxWidth: {
         "container": "1140px"
       },
-      backgroundImage: {
-        "background-table": "url('/assets/bg_1.JPG')",
-      },
+   
 
     },
   },
