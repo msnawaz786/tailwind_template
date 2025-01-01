@@ -22,12 +22,23 @@ var swiper = new Swiper(".mySwiper", {
 
 
 let swiper_1 = new Swiper(".mySwiper-1", {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 30,
     pagination: {
         el: ".swiper-1-pagination",
         clickable: true,
     },
+    breakpoints: {
+        550: {
+            slidesPerView: 2,
+            spaceBetween: 30
+        },
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        },
+    },
+
 });
 
 

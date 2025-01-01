@@ -44,9 +44,9 @@
         <!-- swiper -->
         <div class="swiper mySwiper !absolute top-0 left-0 w-full h-full group">
             <div class="swiper-wrapper">
-                <div class="overaly w-full h-full absolute top-0 left-0 bg-black bg-opacity-60 z-20"></div>
+              
                 <div class="swiper-slide relative">
-
+                    <div class="overaly w-full h-full absolute top-0 left-0 bg-black bg-opacity-60 z-20"></div>
                     <img src="/assets/slider 1.webp" class="absolute top-0 left-0 w-full h-full z-10 object-cover" />
                     <div class="relative z-30 flex flex-col w-full h-full justify-center items-center">
                         <h2 class=" font-bold font-great text-[80px] text-[#c8a97e]">Feliciano</h2>
@@ -54,15 +54,17 @@
                     </div>
                 </div>
                 <div class="swiper-slide relative">
+                    <div class="overaly w-full h-full absolute top-0 left-0 bg-black bg-opacity-60 z-20"></div>
                     <img src="/assets/slider 2.webp" class="absolute top-0 left-0 w-full h-full z-10 object-cover" />
-                    <div class="relative z-20 flex flex-col w-full h-full justify-center items-center">
+                    <div class="relative z-30 flex flex-col w-full h-full justify-center items-center">
                         <h2 class=" font-bold font-great text-[80px] text-[#c8a97e] ">Feliciano</h2>
                         <h1 class="text-white text-6xl font-popins font-[600] uppercase">Nutritious & Tasty</h1>
                     </div>
                 </div>
                 <div class="swiper-slide relative">
+                    <div class="overaly w-full h-full absolute top-0 left-0 bg-black bg-opacity-60 z-20"></div>
                     <img src="/assets/slider 1.webp" class="absolute top-0 left-0 w-full h-full z-10 object-cover" />
-                    <div class="relative z-20 flex flex-col w-full h-full justify-center items-center">
+                    <div class="relative z-30 flex flex-col w-full h-full justify-center items-center">
                         <h2 class=" font-bold font-great text-[80px] text-[#c8a97e]">Feliciano</h2>
                         <h1 class="text-white text-6xl font-popins font-[600] uppercase">Delicious Specialties</h1>
                     </div>
@@ -92,7 +94,7 @@
         <div class="border-b-[1px] border-b-[rgba(255,255,255,0.1)] w-full relative  z-20 top-0 left-0 right-0 ">
             <nav
                 class="md:mx-auto md:max-w-container w-full flex  md:flex  text-white text-[14px] font-popins pt-1.5 pb-1.5 justify-between items-center ">
-                <div class="pt-3 pb-3 text-xl font-[900]">Feliciano</div>
+                <div class="pt-3 pb-3 text-xl font-[900] px-5">Feliciano</div>
                 <ul class="hidden md:flex space-x-6 font-[400]">
                     <li class="text-gold pt-3 pb-3">Home</li>
                     <li class="pt-3 pb-3">About</li>
@@ -103,7 +105,7 @@
 
                 </ul>
                 <div class="md:hidden">
-                    <a class="text-4xl" href="#">&#8801;</a>
+                    <a class="text-4xl px-5" href="#">&#8801;</a>
                 </div>
 
             </nav>
@@ -174,19 +176,18 @@
     <section class="about-section">
         <div class="w-full py-[119px] ">
             <div class="md:max-w-container mx-auto flex flex-col md:flex-row w-full ">
-                <div class="flex gap-x-6 ">
-                    <div class="h-[520px]">
+                <div class="flex gap-x-0 sm:gap-x-0 md:gap-x-6 px-5">
+                    <div class="w-full md:w-[320px] h-[520px]">
                         <img src="/assets/about 1.webp" class="w-full h-full object-cover" />
                     </div>
-                    <div class="mt-5 h-[520px]">
+                    <div class="mt-0 sm:mt-0 md:mt-5 h-[520px] w-full  md:w-[320px]">
                         <img src="/assets/about 2.jpg" class="w-full h-full object-cover" />
                     </div>
                 </div>
-                <div class="px-10">
-                    <div class="border-red-200 text-center md:text-start">
-                        <h2 class="text-gold font-great text-8xl font-normal relative top-[50px] z-10">About</h2>
-                        <h1 class="text-5xl font-semibold font-popins text-[#333333] relative z-20">Feliciano<br>
-                            Restaurant
+                <div class="px-5 md:px-0">
+                    <div class="">
+                        <h2 class="text-gold font-great text-[100px] font-normal relative top-[80px] z-10">About</h2>
+                        <h1 class="text-[40px] md:text-[50px] font-semibold font-popins text-[#333333] relative z-20">Feliciano Restaurant
                         </h1>
                     </div>
                     <p class="text-[#666666] text-[17px] pt-4 leading-8">A small river named Duden flows by their place
@@ -225,7 +226,7 @@
                         <p class="text-sm text-[#666666] uppercase ">Happy Customers</p>
                     </div>
                 </div>
-                <p class="text-[#666666] text-[17px] font-normal font-popins md:w-[30%] w-full pl-16"> A small river
+                <p class="text-[#666666] text-[17px] font-normal font-popins text-center md:w-[30%] w-full md:pl-16"> A small river
                     named Duden flows by their place and supplies it with the necessary regelialia.</p>
             </div>
         </div>
@@ -237,7 +238,7 @@
             <div class="max-w-container mx-auto">
                 <div class="text-center mb-5">
                     <h1 class="relative text-gold font-great font-normal text-8xl top-[50px] z-10">Services</h1>
-                    <h2 class="font-extrabold text-5xl relative z-20 text-[#333333]">Catering Services</h2>
+                    <h2 class="font-extrabold text-4xl md:text-5xl relative z-20 text-[#333333]">Catering Services</h2>
                 </div>
                 <div class="flex flex-col md:flex-row justify-evenly px-4 gap-x-5 pt-[3.5rem]">
                     <div class="flex flex-col items-center  text-center pt-5">
@@ -432,7 +433,7 @@
                             <div class="text pt-6">
                                 <h1 class="text-lg font-semibold">John Smooth</h1>
                                 <p class="text-sm font-normal text-[#0000004d] pt-1 pb-4">Restaurant Owner</p>
-                                <span class="social-icon flex gap-x-4 text-gold text-lg">
+                                <span class="social-icon flex gap-x-4 text-gold text-lg pb-10">
                                     <i class="fa-brands fa-twitter"></i>
                                     <i class="fa-brands fa-facebook-f"></i>
                                     <i class="fa-brands fa-google-plus-g"></i>
@@ -464,7 +465,7 @@
                             <div class="text pt-6">
                                 <h1 class="text-lg font-semibold">Kharl Branyt</h1>
                                 <p class="text-sm font-normal text-[#0000004d] pt-1 pb-4">Chef</p>
-                                <span class="social-icon flex gap-x-4 text-gold text-lg">
+                                <span class="social-icon flex gap-x-4 text-gold text-lg pb-10">
                                     <i class="fa-brands fa-twitter"></i>
                                     <i class="fa-brands fa-facebook-f"></i>
                                     <i class="fa-brands fa-google-plus-g"></i>
@@ -565,11 +566,11 @@
             <div class="max-w-container mx-auto">
                 <div class="text-center">
                     <h1 class="text-gold font-great relative text-8xl top-[50px] z-10">Testimony</h1>
-                    <h2 class="font-extrabold text-5xl relative z-20 text-[#333333]">Happy Customer</h2>
+                    <h2 class="font-extrabold text-4xl md:text-5xl relative z-20 text-[#333333]">Happy Customer</h2>
                 </div>
                 <div class="swiper swiper_1 mySwiper-1">
-                    <div class="swiper-wrapper pt-20">
-                        <div class="swiper-slide flex flex-col items-center">
+                    <div class="swiper-wrapper pt-20 ">
+                        <div class="swiper-slide flex flex-col items-center px-5">
                             <div class="w-32 h-32">
                                 <img src="/assets/person_1.jpg.webp" class="w-full h-full rounded-full object-cover">
                             </div>
@@ -580,7 +581,7 @@
                             <h2 class="text-[12px] font-semibold uppercase text-[#666666] tracking-[2px] pt-5">Customer
                             </h2>
                         </div>
-                        <div class="swiper-slide flex flex-col items-center">
+                        <div class="swiper-slide flex flex-col items-center px-5">
                             <div class="w-32 h-32">
                                 <img src="/assets/person_2.jpg.webp" class="w-full h-full rounded-full object-cover">
                             </div>
@@ -591,7 +592,7 @@
                             <h2 class="text-[12px] font-semibold uppercase text-[#666666] tracking-[2px] pt-5">Customer
                             </h2>
                         </div>
-                        <div class="swiper-slide flex flex-col items-center">
+                        <div class="swiper-slide flex flex-col items-center px-5">
                             <div class="w-32 h-32">
                                 <img src="/assets/person_3.jpg.webp" class="w-full h-full rounded-full object-cover">
                             </div>
@@ -661,13 +662,13 @@
                 <h2 class="font-extrabold text-5xl relative z-20 text-[#333333]">Recent Posts</h2>
             </div>
             <div
-                class="max-w-container mx-auto flex flex-col sm:flex-col md:flex-col lg:flex-row items-center justify-center gap-x-7 py-[119px]">
+                class="max-w-container mx-auto flex flex-col sm:flex-col md:flex-row lg:flex-row items-center justify-center gap-x-5 py-[119px] gap-y-5 ">
 
-                <div class="bg-white ">
-                    <div class="w-[350px] h-[300px]">
+                <div class="bg-white w-[340px]">
+                    <div class="h-[300px] px-5 md:px-0">
                         <img src="/assets/blog-1.webp" class="w-full h-full object-cover">
                     </div>
-                    <div class="pt-4 px-6 pb-6 flex flex-col gap-y-5">
+                    <div class="pt-4 px-5 pb-6 flex flex-col gap-y-5">
                         <a href="#" class="text-[17px] font-normal text-[#666666]">Sept. 06, 2019 Admin</a>
                         <h1 class="text-xl font-semibold">Taste the delicious foods in Asia</h1>
                         <div class="flex justify-between">
@@ -680,11 +681,11 @@
                     </div>
                 </div>
 
-                <div class="bg-white ">
-                    <div class="w-[350px] h-[300px]">
+                <div class="bg-white w-[340px]">
+                    <div class="h-[300px] px-5 md:px-0">
                         <img src="/assets/blog-2.webp" class="w-full h-full object-cover">
                     </div>
-                    <div class="pt-4 px-6 pb-6 flex flex-col gap-y-5">
+                    <div class="pt-4 px-5 pb-6 flex flex-col gap-y-5">
                         <a href="#" class="text-[17px] font-normal text-[#666666]">Sept. 06, 2019 Admin</a>
                         <h1 class="text-xl font-semibold">Taste the delicious foods in Asia</h1>
                         <div class="flex justify-between">
@@ -699,11 +700,11 @@
 
                 </div>
 
-                <div class="bg-white ">
-                    <div class="w-[350px] h-[300px]">
+                <div class="bg-white w-[340px]">
+                    <div class="h-[300px] px-5 md:px-0">
                         <img src="/assets/blog-3.webp" class="w-full h-full object-cover">
                     </div>
-                    <div class="pt-4 px-6 pb-6 flex flex-col gap-y-5">
+                    <div class="pt-4 px-5 pb-6 flex flex-col gap-y-5">
                         <a href="#" class="text-[17px] font-normal text-[#666666]">Sept. 06, 2019 Admin</a>
                         <h1 class="text-xl font-semibold">Taste the delicious foods in Asia</h1>
                         <div class="flex justify-between">
@@ -724,8 +725,9 @@
     <!-- footer section -->
     <section class="footer-section">
         <div class="w-full bg-[#141313] py-20">
-            <div class="max-w-container mx-auto flex flex-col md:flex-col lg:flex-row items-center gap-x-5">
-                <div class="1 flex flex-col sm:flex-col md:flex-row lg:flex-row gap-x-5 ">
+            <div
+                class="max-w-container mx-auto flex flex-col md:flex-col lg:flex-row items-center justify-center gap-x-5">
+                <div class="1 flex flex-col sm:flex-col md:flex-row lg:flex-row gap-x-5 gap-y-10 md:gap-y-0">
                     <div class="1-01 w-72">
                         <h1 class="text-white mb-10 text-lg font-bold">Feliciano</h1>
                         <p class="text-[#ffffffb3] font-normal text-sm pb-4 leading-9">Far far away, behind the word
@@ -772,7 +774,7 @@
                     </div>
                 </div>
                 <div class="2 flex flex-col sm:flex-col md:flex-row lg:flex-row  gap-x-5">
-                    <div class="2-01 w-72">
+                    <div class="2-01 w-72 pt-10 md:pt-0">
                         <h1 class="text-white mb-10 text-lg font-bold">Instagram</h1>
                         <div class="flex w-[85px] h-[100px]">
                             <img src="/assets/insta-1.jpg.webp" class="w-full h-full object-cover" />
@@ -786,7 +788,7 @@
                         </div>
 
                     </div>
-                    <div class="2-02 w-72">
+                    <div class="2-02 w-72 pt-10 md:pt-0">
                         <h1 class="text-white mb-10 text-lg font-bold">Newsletter</h1>
                         <p class="text-[#ffffffb3] font-normal text-sm pb-7">Far far away, behind the word mountains,
                             far
