@@ -15,6 +15,8 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
     <title>Feliciano | ColoRib</title>
     <style>
@@ -36,11 +38,16 @@
             display: block;
 
         }
+        .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 17px; 
+
+  }
     </style>
 </head>
 
-<body class="bg-white font-popins">
-    <header class="w-full h-[950px] relative">
+<body class="bg-white font-popins" >
+    <header class="w-full h-[100vh] relative">
         <!-- swiper -->
         <div class="swiper mySwiper !absolute top-0 left-0 w-full h-full group">
             <div class="swiper-wrapper">
@@ -48,9 +55,9 @@
                 <div class="swiper-slide relative">
                     <div class="overaly w-full h-full absolute top-0 left-0 bg-black bg-opacity-60 z-20"></div>
                     <img src="/assets/slider 1.webp" class="absolute top-0 left-0 w-full h-full z-10 object-cover" />
-                    <div class="relative z-30 flex flex-col w-full h-full justify-center items-center">
+                    <div class="relative z-30 flex flex-col w-full h-full justify-center">
                         <h2 class=" font-bold font-great text-[80px] text-[#c8a97e]">Feliciano</h2>
-                        <h1 class="text-white text-6xl font-popins font-[600] uppercase">Nutritious & Tasty</h1>
+                        <h1 class="text-white text-3xl md:text-6xl font-popins font-[600] uppercase">Nutritious & Tasty</h1>
                     </div>
                 </div>
                 <div class="swiper-slide relative">
@@ -58,7 +65,7 @@
                     <img src="/assets/slider 2.webp" class="absolute top-0 left-0 w-full h-full z-10 object-cover" />
                     <div class="relative z-30 flex flex-col w-full h-full justify-center items-center">
                         <h2 class=" font-bold font-great text-[80px] text-[#c8a97e] ">Feliciano</h2>
-                        <h1 class="text-white text-6xl font-popins font-[600] uppercase">Nutritious & Tasty</h1>
+                        <h1 class="text-white  text-3xl md:text-6xl font-popins font-[600] uppercase">best restaurant</h1>
                     </div>
                 </div>
                 <div class="swiper-slide relative">
@@ -66,16 +73,16 @@
                     <img src="/assets/slider 1.webp" class="absolute top-0 left-0 w-full h-full z-10 object-cover" />
                     <div class="relative z-30 flex flex-col w-full h-full justify-center items-center">
                         <h2 class=" font-bold font-great text-[80px] text-[#c8a97e]">Feliciano</h2>
-                        <h1 class="text-white text-6xl font-popins font-[600] uppercase">Delicious Specialties</h1>
+                        <h1 class="text-white  text-3xl md:text-6xl font-popins font-[600] uppercase">Delicious Specialties</h1>
                     </div>
                 </div>
 
             </div>
             <div
-                class="swiper-button-next text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 ">
+                class="swiper-button-next text-white  opacity-0 group-hover:opacity-100 transition-opacity duration-500 ">
             </div>
             <div
-                class="swiper-button-prev text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                class="swiper-button-prev text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500"  >
             </div>
             <div class="swiper-pagination"></div>
         </div>
@@ -119,7 +126,7 @@
     <!-- breakfast section -->
     <section class="breakfast-section">
         <div
-            class="w-full md:flex justify-evenly lg:mt-[-230px] lg:text-white relative z-20 border-t-[1px] border-t-[rgba(255,255,255,0.1)] ">
+            class="w-full md:flex justify-evenly lg:mt-[-230px] lg:text-white relative z-20 border-t-[1px] border-t-[rgba(255,255,255,0.1)] " data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
             <div class="flex md:flex flex-col items-center  pt-5">
                 <div class="w-[90px] h-[90px] rounded-full">
                     <img src="/assets/breakfast-1.jpg.webp" class="w-full h-full object-cover rounded-full" />
@@ -174,7 +181,7 @@
     </section>
     <!-- about section -->
     <section class="about-section">
-        <div class="w-full py-[119px] ">
+        <div class="w-full py-[119px] "data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
             <div class="md:max-w-container mx-auto flex flex-col md:flex-row w-full ">
                 <div class="flex gap-x-0 sm:gap-x-0 md:gap-x-6 px-5">
                     <div class="w-full md:w-[320px] h-[520px]">
@@ -206,7 +213,7 @@
 
     <!-- counting section -->
     <section class="counting-section">
-        <div class="w-full">
+        <div class="w-full"data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
             <div
                 class="max-w-container w-full mx-auto  flex flex-col md:flex-row items-center justify-center px-3 gap-y-10 pb-[119px] ">
                 <div class=" flex flex-col md:flex-row font-popins gap-y-10 md:w-[70%] justify-between">
@@ -236,7 +243,7 @@
 
     <!-- catering section -->
     <section class="catering-section">
-        <div class="w-full bg-lightgray pb-[119px]">
+        <div class="w-full bg-lightgray pb-[119px]"data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
             <div class="max-w-container mx-auto">
                 <div class="text-center mb-5">
                     <h1 class="relative text-gold font-great font-normal text-8xl top-[50px] z-10">Services</h1>
@@ -273,7 +280,7 @@
 
     <!-- menu section  -->
     <section class="menu-section">
-        <div class="w-full pb-[119px]">
+        <div class="w-full pb-[119px]"data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
             <div class="text-center">
                 <h1 class="relative text-gold font-great font-normal text-8xl top-[50px] z-10">Specialties</h1>
                 <h2 class="font-extrabold text-[40px] md:text-[50px] relative z-20 text-[#333333]">Our Menu</h2>
@@ -419,7 +426,7 @@
 
     <!-- master chief section -->
     <section class="master-chief-section">
-        <div class="w-full pb-[119px]">
+        <div class="w-full pb-[119px]"data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
 
             <div class="text-center">
                 <h1 class="relative text-gold font-great font-normal text-8xl top-[50px] z-10">Chef</h1>
@@ -502,7 +509,7 @@
     <!-- table section -->
     <section class="table-section">
 
-        <div class="bg-[url('/assets/bg_1.JPG')] w-full h-[838px] bg-no-repeat bg-center bg-cover bg-fixed  ">
+        <div class="bg-[url('/assets/bg_1.JPG')] w-full h-[838px] bg-no-repeat bg-center bg-cover bg-fixed  "data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
             <div class="max-w-container mx-auto h-full flex items-center justify-center md:justify-start">
                 <div class="bg-white inline-block md:px-20 lg:px-20">
                     <div class="text-center px-5 md:px-0">
@@ -565,7 +572,7 @@
 
     <!-- testymony swiper section -->
     <section class="testymony-section">
-        <div class="w-full py-[119px]">
+        <div class="w-full py-[119px]"data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
             <div class="max-w-container mx-auto">
                 <div class="text-center">
                     <h1 class="text-gold font-great relative text-8xl top-[50px] z-10">Testimony</h1>
@@ -659,7 +666,7 @@
 
     <!-- blog section -->
     <section class="blog-section">
-        <div class="w-full bg-lightgray">
+        <div class="w-full bg-lightgray"data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
             <div class="text-center">
                 <h1 class="relative text-8xl font-great text-gold top-[50px] z-10">Blog</h1>
                 <h2 class="font-extrabold text-[40px] md:text-[50px] relative z-20 text-[#333333]">Recent Posts</h2>
@@ -727,7 +734,7 @@
 
     <!-- footer section -->
     <section class="footer-section">
-        <div class="w-full bg-[#141313] py-20">
+        <div class="w-full bg-[#141313] py-20"data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
             <div
                 class="max-w-container mx-auto flex flex-col md:flex-col lg:flex-row items-center justify-center gap-x-5">
                 <div class="1 flex flex-col sm:flex-col md:flex-row lg:flex-row gap-x-5 gap-y-10 md:gap-y-0">
@@ -735,7 +742,7 @@
                         <h1 class="text-white mb-10 text-lg font-bold">Feliciano</h1>
                         <p class="text-[#ffffffb3] font-normal text-sm pb-4 leading-8 md:leading-9">Far far away, behind the word
                             mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        <span class="social-icon flex gap-x-4 text-white text-lg">
+                        <span class="social-icon flex gap-x-4 text-white text-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                             <i class="fa-brands fa-twitter bg-[#FFFFFF0D] p-3 rounded-full"></i>
                             <i class="fa-brands fa-facebook-f bg-[#FFFFFF0D] p-3 rounded-full"></i>
                             <i class="fa-brands fa-instagram bg-[#FFFFFF0D] p-3 rounded-full"></i>
@@ -819,6 +826,11 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </body>
 
 
